@@ -1,59 +1,30 @@
-<script>
-	import Counter from './Counter.svelte';
-	import welcome from '$lib/images/svelte-welcome.webp';
-	import welcome_fallback from '$lib/images/svelte-welcome.png';
-</script>
+
 
 <svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<title>Welcome to the best Rock Paper Scissors website ;of 2023</title>
+	<meta name="description" content="Rock paper Scissors is the best game ever." />
 </svelte:head>
 
-<section>
-	<h1>
-		<span class="welcome">
-			<picture>
-				<source srcset={welcome} type="image/webp" />
-				<img src={welcome_fallback} alt="Welcome" />
-			</picture>
-		</span>
-
-		to your new<br />SvelteKit app
-	</h1>
-
-	<h2>
-		try editing <strong>src/routes/+page.svelte</strong>
-	</h2>
-
-	<Counter />
-</section>
-
-<style>
-	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 0.6;
+<script>
+	import { goto } from '$app/navigation';
+  
+	function startGame() {
+	  goto('/game');
 	}
-
-	h1 {
-		width: 100%;
-	}
-
-	.welcome {
-		display: block;
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
-	}
-
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
-	}
-</style>
+  </script>
+  
+  <main class="flex flex-col items-center justify-center h-screen">
+	<h1 class="text-3xl font-bold mb-4">Rock Paper Scissors</h1>
+  
+	<p class="text-xl text-center mb-4">
+	  Welcome to the exciting world of Rock Paper Scissors! It's a classic game loved by people of all ages.
+	  Challenge yourself and have fun playing against the computer.
+	</p>
+  
+	<button
+	  class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+	  on:click={startGame}
+	>
+	  Start Game
+	</button>
+  </main>
