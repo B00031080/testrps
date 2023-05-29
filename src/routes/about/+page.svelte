@@ -15,7 +15,6 @@
 		The game spread to other parts of the world, evolving with different names and hand gestures.
 		In Japan, it became "Jan Ken Pon," and in the Western world, it became known as "Rock Paper Scissors."
 	  </p>
-	  <img src="image-url-1.jpg" alt="Origin of Rock Paper Scissors" class="rounded-lg mb-4">
 	  <p class="mb-4">
 		Over the centuries, Rock Paper Scissors has become a popular game enjoyed by people of all ages.
 		Its simplicity and universal appeal have contributed to its enduring popularity across cultures.
@@ -34,7 +33,6 @@
 		Some philosophers have drawn parallels between Rock Paper Scissors and real-life situations, highlighting the interplay of chance, rationality, and the balance between action and reaction.
 		It has become a metaphor for life's unpredictability and the importance of adaptability and strategic thinking in navigating uncertain circumstances.
 	  </p>
-	  <img src="image-url-2.jpg" alt="Philosophical Meaning of Rock Paper Scissors" class="rounded-lg mb-4">
 	</section>
   
 	<section class="mb-8">
@@ -44,7 +42,6 @@
 		Its simplicity makes it an accessible and inclusive game, transcending language and cultural barriers.
 		It serves as a social icebreaker, fostering connections and camaraderie among individuals.
 	  </p>
-	  <img src="image-url-3.jpg" alt="Importance of Rock Paper Scissors in Modern Times" class="rounded-lg mb-4">
 	  <p class="mb-4">
 		Rock Paper Scissors has also found practical applications in various fields.
 		It has been used as a teaching tool in psychology, mathematics, and game theory to study decision-making and strategic thinking.
