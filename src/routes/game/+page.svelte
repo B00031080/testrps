@@ -1,11 +1,12 @@
 <script>
+    import { supabase } from "$lib/supabaseClient";
     let playerChoice = "";
     let computerChoice = "";
     let result = "";
   
     const choices = ["Rock", "Paper", "Scissors"];
   
-    function playGame(choice) {
+    async function playGame(choice) {
       playerChoice = choice;
       computerChoice = choices[Math.floor(Math.random() * choices.length)];
   
@@ -20,6 +21,12 @@
       } else {
         result = "Computer wins!";
       }
+      const { error } = await supabase.from("games").insert({
+        player_choice:playerChoice,
+        computer_choice:computerChoice
+      })
+
+      console.log(error);
     }
   </script>
   
